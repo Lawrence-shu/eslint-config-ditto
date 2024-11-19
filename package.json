@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ditto",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Lawrenceshu自用eslint规则",
   "keywords": [
     "eslint",
