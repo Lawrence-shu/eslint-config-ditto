@@ -989,7 +989,7 @@ module.exports = {
     /** 最大连续空白行1行， */
     "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1 }],
     /** 花括号两侧要求有空格 */
-    "object-curly-spacing": ["error", "always"],
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
     /** 强制中缀操作符两侧必须有空格 */
     "space-infix-ops": "error",
     /** 在行尾注释前也不允许多余空格 */
@@ -1001,10 +1001,10 @@ module.exports = {
     "object-curly-newline": [
       "error",
       {
-        "ObjectExpression": { "multiline": true, "minProperties": 3 },
-        "ObjectPattern": { "multiline": true, "minProperties": 3 },
-        "ImportDeclaration": { "multiline": true, "minProperties": 3 },
-        "ExportDeclaration": { "multiline": true, "minProperties": 3 },
+        "ObjectExpression": { "consistent": true },
+        "ObjectPattern": { "consistent": true },
+        "ImportDeclaration": { "consistent": true },
+        "ExportDeclaration": { "consistent": true },
       }
     ],
     /** 不允许空白行中有多余空格 */
